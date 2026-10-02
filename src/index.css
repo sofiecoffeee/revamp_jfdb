@@ -1,0 +1,102 @@
+.event-banner {
+    padding: 40px 0;
+}
+
+.event-banner .carousel-item {
+    aspect-ratio: auto;
+}
+.event-banner .carousel-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.carousel-indicators button {
+    width: 14px !important;
+    height:14px !important;
+    border-radius:50% !important;
+    padding: 0 !important;
+    margin: 0 5px !important;
+}
+
+@media (max-width: 768px) {
+    .event-banner .carousel-item {
+        aspect-ratio: 16 / 9;
+        object-fit: contain;
+    }
+}
+
+.movie-text {
+    color: #ab8d3f;
+    font-weight: 600;
+}
+
+.category-card {
+    display: inline-block;
+    width:fit-content;
+    padding: 0.25rem 0.75rem;
+    border-radius:0.5rem;
+    line-height:1.4;
+    white-space: nowrap;
+}
+
+.category-in-production {
+    background-color: #E26F8F;
+    color: whitesmoke;
+     font-weight: 500;
+}        
+
+.category-completed {
+    background-color: #4DCCEC;
+    color: whitesmoke;
+    font-weight: 500;
+}
+
+
+.text-justify {
+    text-align: justify;
+}
+
+.marketlook-container:hover {
+    color: #E26F8F !important;
+}
+
+.sartras-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: nowrap;
+}
+
+.sartras-logo {
+    width: 90px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    flex-shrink: 0;
+}
+
+.sartras-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.4;
+}
+
+
+@media (max-width: 768px) {
+    .sartras-row {
+    flex-wrap: wrap;
+    }
+
+    .sartras-text {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    }
+
+    .sartras-logo {
+        width: 72px;
+    }
+}
